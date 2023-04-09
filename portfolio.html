@@ -15,6 +15,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -43,6 +44,11 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="mob-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="32" height="22" class="mob-open-icon" aria-label="Menu">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -60,7 +66,6 @@
                     <li class="portfolio-filter-item"><button class="filter-btn" type="button">Design</button></li>
                     <li class="portfolio-filter-item"><button class="filter-btn" type="button">Marketing</button></li>
                 </ul>
-
                 <ul class="portfolio-list list">
                     <li class="portfolio-item">
                         <a class="portfolio-item-link link" href="">
@@ -287,6 +292,72 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mob Menu -->
+    <div class="mob-container js-menu-container" id="mobile-menu">
+        <div><button class="mob-close-btn js-close-menu">
+                <svg width="8" height="8">
+                    <use class="mob-icon-close" href="./images/icons.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+            <ul class="mob-header-list list">
+                <li class="mob-header-list-item"><a class="mob-header-list-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-header-list-item"><a class="mob-header-list-link link"
+                        href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mob-header-list-item"><a class="mob-header-list-link link mob-active" href="">Contacts</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <div>
+            <address class="mob-header-address">
+                <ul class="mob-header-address-list list">
+                    <li class="mob-header-phone">
+                        <a class="mob-header-phone-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mob-header-email">
+                        <a class="mob-header-email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="mob-header-sn-list list">
+                <li class="mob-header-sn-item">
+                    <a href="" class="header-sn-link link">
+                        <svg width="24" height="24" class="header-sn-icon">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-header-sn-item">
+                    <a href="" class="header-sn-link link">
+                        <svg width="24" height="24" class="header-sn-icon">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-header-sn-item">
+                    <a href="" class="header-sn-link link">
+                        <svg width="24" height="24" class="header-sn-icon">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-header-sn-item">
+                    <a href="" class="header-sn-link link">
+                        <svg width="24" height="24" class="header-sn-icon">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
