@@ -118,10 +118,6 @@ body {
     display: none;
 }
 
-.active {
-    color: var(--color-ocean);
-}
-
 /*----------Buttons----------*/
 .hero-btn,
 .subs-btn,
@@ -143,7 +139,7 @@ body {
 
 .hero-btn {
     min-width: 169px;
-    min-height: 69px;
+    min-height: 56px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -308,13 +304,13 @@ body {
 }
 
 .team-container {
-    padding-left: 82px;
-    padding-right: 82px;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .team-item {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;    
 }
 
 .team-item:not(:last-child) {
@@ -562,6 +558,7 @@ body {
     outline: transparent;
     padding: 8px 16px;
     margin-bottom: 16px;
+    color: var(--color-white);
     transition: border var(--tr-duration) var(--tr-timing-function)
 }
 
@@ -640,6 +637,11 @@ body {
     transition: fill var(--tr-duration) var(--tr-timing-function);
 }
 
+.modal-input:hover+.modal-input-icon,
+.modal-input:focus+.modal-input-icon {
+    fill: var(--color-iris);
+}
+
 .modal-field {
     margin-bottom: 8px;
 }
@@ -666,6 +668,13 @@ body {
     padding-left: 38px;
     outline: transparent;
     transition: border var(--tr-duration) var(--tr-timing-function)
+}
+
+.modal-input:hover,
+.modal-input:focus,
+.modal-textarea:hover,
+.modal-textarea:focus {
+    border: 1px solid var(--color-iris);
 }
 
 .modal-textarea {
@@ -713,10 +722,20 @@ body {
     fill: var(--color-white);
 }
 
+.modal-input-check:hover+.modal-check-label span,
+.modal-input-check:focus+.modal-check-label span {
+    border-color: var(--color-ocean);
+}
+
 .modal-check-link {
     margin-left: 3px;
     transition: color var(--tr-duration) var(--tr-timing-function);
     color: var(--color-iris)
+}
+
+.modal-check-link:hover,
+.modal-check-link:focus {
+    color: var(--color-ocean);
 }
 
 /*----------Mob Menu----------*/
@@ -745,6 +764,10 @@ body {
     display: flex;
     justify-content: left;
     gap: calc((100% - 160px) / 3);
+}
+
+.mob-header-list-item:not(:last-child) {
+    padding-bottom: 40px;
 }
 
 .mob-header-list-link {

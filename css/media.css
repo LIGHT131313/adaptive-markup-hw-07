@@ -35,8 +35,13 @@
         height: 40px;
     }
 }
-
-
+/*----------428----------*/
+@media screen and (min-width: 428px) {
+    .team-container {
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+}
 
 /*----------768----------*/
 @media screen and (min-width: 768px) {
@@ -92,6 +97,10 @@
         color: var(--color-grey);
     }
 
+    .active {
+        color: var(--color-ocean);
+    }
+
     .active::after {
         content: "";
         position: absolute;
@@ -120,9 +129,8 @@
     }
 
     .header-address-link {
-        
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--color-slate);        
@@ -326,6 +334,7 @@
     .header-address-link {
         padding-top: 24px;
         padding-bottom: 24px;
+        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         transition: color var(--tr-duration) var(--tr-timing-function);
@@ -395,31 +404,9 @@
         border: 1px solid var(--color-iris);
     }
 
-    .modal-input:hover,
-    .modal-input:focus,
-    .modal-textarea:hover,
-    .modal-textarea:focus {
-        border: 1px solid var(--color-iris);
-    }
-
-    .modal-input-check:hover+.modal-check-label span,
-    .modal-input-check:focus+.modal-check-label span {
-        border-color: var(--color-ocean);
-    }
-
-    .modal-input:hover+.modal-input-icon,
-    .modal-input:focus+.modal-input-icon {
-        fill: var(--color-iris);
-    }
-
-    .modal-check-link:hover,
-    .modal-check-link:focus {
-        color: var(--color-ocean);
-    }
-
     /*----------Hero----------*/
     .hero {
-        padding-top: 188px;
+        padding-top: 260px;
         padding-bottom: 188px;
         max-width: 1440px;
         background-image: var(--lg), url(../images/people-office.jpg);    
